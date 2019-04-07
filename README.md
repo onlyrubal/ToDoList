@@ -8,3 +8,6 @@ https://uigradients.com/
 https://fonts.google.com
 https://fontawesome.com
 http://uicolorpicker.com
+
+
+** Do Make the change in directory of CSS file in head of index.html file.
