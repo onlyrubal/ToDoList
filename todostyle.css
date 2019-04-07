@@ -1,0 +1,230 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    
+}
+
+body
+{
+    min-height: 100%;
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.wrapper
+{
+    width: 65%;
+    height: 670px;
+    margin: 30px auto;
+    border: solid 4px black;
+    border-radius: 20px;
+    background: background: linear-gradient(to right, #e8cbc0, #636fa4);
+}
+
+.header
+{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    border-radius: 15px 15px 0px 0px;
+    padding-top: 5px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    border-bottom: solid 4px black;
+}
+
+.brown
+{
+    color: saddlebrown;
+    font-size: 1.3em;
+}
+
+.morning-heading
+{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 25px;
+}
+
+.evening-heading
+{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 25px;
+}
+.wraplist
+{
+    height: 80%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+/*    border: 2px solid green;*/
+    
+/*    This above comment helps me understand the above 3 lines of code. If I un-comment the above three lines it will outline the darkgreen line*/
+    
+    padding-left: 20px;
+/*    border: 2px solid green;*/ 
+/*    Same for the above comment*/
+}
+
+input[type = "checkbox"]
+{
+    position: relative;
+    float: right;
+    right: 40px;
+    top: 5px;
+}
+
+input[type = "checkbox"]:checked + label
+{
+    text-decoration: line-through;
+    opacity: 0.3;
+/*    rgba(0,0,0,0,3);*/
+}
+
+.list
+{
+/*    Helps in removing the numbering, just like in the navigation bar.*/
+    list-style: none;
+        
+}
+
+.list li
+{
+/*     This width 100% includes both the checkbox and the label. We did 100% in wraplist class. Here we are just writing for self satisfaction.*/
+    width: 100%;
+    float: left;
+    padding: 10px 10px 14px 10px;
+}
+
+label
+{
+    width: 90%;
+    font-family: 'Cantarell', sans-serif; 
+    font-size: 16px;
+}
+
+/*Coloring the font awesome Icons*/
+
+.fa-instagram {
+    color: #d10069;
+}
+
+.fa-laptop-code {
+    color: #898a8b;
+}
+
+.fa-user-tie {
+    color: #83191c;
+}
+
+.fa-youtube
+{
+    color: #ff0000;
+}
+
+.fa-gamepad
+{
+    color: #2B2B52;
+}
+
+.fa-users
+{
+    color: #000000;
+}
+
+.fa-briefcase
+{
+    color: saddlebrown;
+}
+
+.fa-building
+{
+    color: #000000;
+}
+
+.fa-utensils
+{
+    color:#7B8788;
+}
+
+.fa-bicycle
+{
+    color: #4C4B4B;
+}
+
+
+@media(max-width: 1199px) and (min-width: 992px) {
+    .wrapper {
+        width: 65%;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width: 991px) and (min-width: 768px) {
+    .wrapper {
+        width: 79%;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .wrapper {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .wraplist label {
+        max-width: 88%;
+    }
+}
+
+@media(max-width: 615px) {
+    .wrapper {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .wrapper .header span {
+        font-size: 35px;
+        position: relative;
+        top: 5px;
+    }
+
+    .wrapper p {
+        font-size: 20px;
+    }
+    
+    .wraplist 
+    {
+        font-size: 20px;
+    }
+
+    .wraplist label {
+        font-size: 14px;
+        max-width: 97%;
+    }
+
+    input[type="checkbox"] {
+        position: relative;
+        top: px;
+        right: 1px;
+        width: 16px;
+        height: 16px;
+    }
+
+/*
+    .wraplist i {
+        display: none
+    }
+*/
+
+}
